@@ -57,6 +57,19 @@ ul {
     align-items: center;
 }
 
+.searchbar input {
+    border:0.16em solid #eceaea;
+    outline: none ! important;
+
+}
+
+.searchbar input:hover{
+    border-color:#DDDDDD;
+}
+.searchbar input:focus{
+    border-color:#BBBBBB;
+}
+
 .icon{
     height: 20px;
 }
@@ -71,13 +84,14 @@ ul {
 
 .prof-pic-small {
     object-fit: contain;
-    width: 100%;
-    max-height: 50px;
+    max-width: 90%;
+    max-height: 40px;
 }
 
 .prof-pic-big {
-    width: 100%;
-    max-height: 100px;
+    max-width: 90%;
+    max-height: 60px;
+    object-fit: contain;
 }
 
 .main-content {
@@ -88,10 +102,37 @@ ul {
 
 .user-main {
     display: grid;
-    grid-template-columns: 10% 60% 30%;
+    grid-template-columns: 15% 85%;
+    align-items: center;
+    padding-left: 15px;
 }
 
 .user-welcome {
     display: flex;
     flex-direction: column;
+}
+.user-actions {
+    display:flex;
+    align-items: center;
+}
+.user-actions button {
+    padding:0.5em 3em;
+    border:0.16em solid #FFFFFF;
+    margin:0 0.3em 0.3em 0;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight:400;
+    text-align:center;
+    transition: all 0.15s;
+}
+
+.user-actions button:hover{
+    border-color:#DDDDDD;
+}
+.user-actions button:active{
+    border-color:#BBBBBB;
+}
+
+#username {
+    font-size: 2.5vw;
 }
