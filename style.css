@@ -1,10 +1,15 @@
 * {
     margin: 0;
     padding: 0;
+    font-weight: 300;
   }
 
 ul {
     list-style-type: none;
+}
+
+h3 {
+    font-weight:500;
 }
 
 .container {
@@ -35,6 +40,7 @@ ul {
     align-items:center;
     font-size: 20px;
     gap: 10px;
+    font-weight: 500;
 }
 .logo img {
     height: 30px;
@@ -82,6 +88,10 @@ ul {
     grid-template-columns: 25% 25% 25% 25%;
 }
 
+.user-corner p {
+    font-weight: 500;
+}
+
 .prof-pic-small {
     object-fit: contain;
     max-width: 90%;
@@ -98,6 +108,25 @@ ul {
     background-color: #fbcfe8;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    padding: 15px;
+}
+
+.main-sidebar {
+    display: grid;
+    grid-template-rows: 50% 50%;
+}
+
+.trend-box {
+    background-color: white;
+    height: 70%;
+    width: 90%;
+    padding: 5px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .user-main {
@@ -105,6 +134,18 @@ ul {
     grid-template-columns: 15% 85%;
     align-items: center;
     padding-left: 15px;
+}
+
+.user {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.user-bio {
+    color: grey;
+    font-size: 14px;
 }
 
 .user-welcome {
@@ -135,4 +176,5 @@ ul {
 
 #username {
     font-size: 2.5vw;
+    font-weight: 500;
 }
