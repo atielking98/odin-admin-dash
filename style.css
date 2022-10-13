@@ -6,6 +6,12 @@
 
 ul {
     list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    margin: 5px 0;
 }
 
 h3 {
@@ -35,15 +41,27 @@ h3 {
     fill: white;
 }
 
-.logo {
+.logo, .logo-small {
     display: flex;
     align-items:center;
-    font-size: 20px;
     gap: 10px;
     font-weight: 500;
 }
+
+.logo {
+    font-size: 20px;
+}
+
+.logo-small {
+    font-size: 16px;
+}
+
 .logo img {
     height: 30px;
+}
+
+.logo-small img {
+    height: 15px;
 }
 
 
@@ -118,9 +136,9 @@ h3 {
     grid-template-rows: 50% 50%;
 }
 
-.trend-box {
+.trend-box, .announce-box {
     background-color: white;
-    height: 70%;
+    height: 75%;
     width: 90%;
     padding: 5px;
     margin-top: 5px;
