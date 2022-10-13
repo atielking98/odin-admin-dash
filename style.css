@@ -149,6 +149,9 @@ h3 {
 
 .announce {
     width: 90%;
+    height: 90%;
+    word-wrap: break-word;
+    overflow: scroll;
 }
 
 .user-main {
