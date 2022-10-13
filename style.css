@@ -165,7 +165,7 @@ h3 {
     gap: 10px;
 }
 
-.user-bio {
+.user-bio, .project-description {
     color: grey;
     font-size: 14px;
 }
@@ -199,4 +199,37 @@ h3 {
 #username {
     font-size: 2.5vw;
     font-weight: 500;
+}
+
+.projects {
+    display: grid;
+    grid-template-rows: 5% 95%;
+}
+
+.cards {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+    align-items: center;
+}
+
+.card {
+    background-color: white;
+    width: 90%;
+    height: 90%;
+    border-radius: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 5px;
+    border-left: 5px groove rgb(75,59,64);
+}
+
+.card img {
+    height: 20px;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
 }
